@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: rgb(7, 63, 56);
+    color: wheat;
+    list-style:none;
+    font-size: 20PX;
+}
+
+nav ul li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+#brand img{
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 50%;
+}
+
+/* Background img & text */
+
+#bg{
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+   
+    /* border: 1px solid wheat; */
+}
+
+#bg img{
+    width: 100vw;
+    height: 70vh;
+    position: absolute;
+}
+
+#bg .section{
+    color: antiquewhite;
+    top: 15vh;
+    left: 8vw;
+    position: absolute;
+}
+
+#bg .section h2{
+    font-size: 5rem;
+}
+
+#bg .section p{
+    font-size: 2rem;
+}
+
+/* top-demanding books */
+
+.books{
+    background:rgb(179, 190, 56);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin: 2px;
+}
+
+.books .heading{
+    position: absolute;
+    top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(28, 27, 26);
+}
+
+.books .cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.books .cards .card{
+    margin: 10px;
+    height: 40vh;
+    border-radius: 0.6rem;
+    background: white;
+}
+
+.books .cards .card img{
+    height: 30vh;
+    width: 150px;
+    padding: 15px;
+    border-radius: 0.6rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.books .cards .card img:hover{
+    transform: scale(1.1);
+}
+
+.card .container{
+    margin: 0.2rem 1rem;
+    font-size: 20px;
+
+}
+
+/* other books */
+#other-books{
+    background-color: rgb(230, 124, 58);
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(10, 104, 112);
+    height: 70px;
+    
+}
+
+.social .logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
+    /* font-size: 40px; */
+}
+
+.social .logo a{
+    font-size: 30px;
+    color: rgb(227, 231, 239);
+
+}
+
+@media screen and (max-width: 992px) {
+
+    #bg .section h2{
+        font-size: 4rem;
+    }
+    
+    #bg .section p{
+        font-size: 2rem;
+    }
+
+    .books .cards{
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    #bg{
+        height: 60vh;
+    }
+
+    #bg img{
+        height: 60vh;
+    }
+
+    #bg .section h2{
+        font-size: 3rem;
+    }
+    
+    #bg .section p{
+        font-size: 2rem;
+    }
+
+    .books .cards{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #bg{
+        height: 50vh;
+    }
+
+    #bg img{
+        height: 50vh;
+    }
+
+    #bg .section h2{
+        font-size: 2.5rem;
+    }
+    
+    #bg .section p{
+        font-size: 1.5rem;
+    }
+
+    .books .cards{
+        margin-top: 50px;
+    }
+
+    /* .books .cards .card{
+        height: 30vh;
+    }
+
+    .books .cards .card img{
+        height: 20vh;
+    }  */
+}
+
+@media screen and (max-width: 500px) {
+
+    #bg{
+        height: 40vh;
+    }
+
+    #bg img{
+        height: 40vh;
+    }
+    
+    #bg .section h2{
+        font-size: 2rem;
+    }
+    
+    #bg .section p{
+        font-size: 1.5rem;
+    }
+
+    .books .cards{
+        margin-top: 20px;
+    }
+
+    .books .cards .card{
+        height: 30vh;
+    }
+
+    .books .cards .card img{
+        height: 20vh;
+    } 
+}
