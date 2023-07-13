@@ -3,10 +3,11 @@
     padding: 0;
 }
 
+
 nav ul{
     display: flex;
     align-items: center;
-    height: 65px;
+    height: 70px;
     background-color: rgb(7, 63, 56);
     color: wheat;
     list-style:none;
@@ -16,6 +17,11 @@ nav ul{
 nav ul li{
     padding: 10px;
     cursor: pointer;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: wheat;
 }
 
 #brand{
@@ -26,7 +32,7 @@ nav ul li{
 }
 
 #brand img{
-    height: 45px;
+    height: 60px;
     padding: 0 8px;
     border-radius: 50%;
 }
@@ -64,9 +70,13 @@ nav ul li{
 
 /* top-demanding books */
 
+#top-books{
+    height: 120vh;
+}
+
 .books{
     background:rgb(179, 190, 56);
-    height: 100vh;
+    height: 200vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -81,6 +91,7 @@ nav ul li{
     text-align: center;
     font-size: 2rem;
     color: rgb(28, 27, 26);
+    font-style: italic;
 }
 
 .books .cards{
@@ -99,7 +110,10 @@ nav ul li{
     border-radius: 0.6rem;
     background: white;
 }
-
+.books .cards .card a{
+    text-decoration: none;
+    color: black;
+}
 .books .cards .card img{
     height: 30vh;
     width: 150px;
@@ -130,7 +144,7 @@ nav ul li{
     flex-direction: column;
     width: 100vw;
     background-color: rgb(10, 104, 112);
-    height: 70px;
+    height: 80px;
     
 }
 
@@ -140,15 +154,20 @@ nav ul li{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 50%;
+    width: 30%;
     margin: auto;
     /* font-size: 40px; */
 }
 
 .social .logo a{
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(227, 231, 239);
 
+}
+.social p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 900;
 }
 
 @media screen and (max-width: 992px) {
@@ -159,6 +178,13 @@ nav ul li{
     
     #bg .section p{
         font-size: 2rem;
+    }
+
+    #top-books{
+        height: 160vh;
+    }
+    .books{
+        height: 260vh;
     }
 
     .books .cards{
@@ -183,6 +209,14 @@ nav ul li{
     
     #bg .section p{
         font-size: 2rem;
+    }
+
+
+    #top-books{
+        height: 190vh;
+    }
+    .books{
+        height: 260vh;
     }
 
     .books .cards{
@@ -212,6 +246,13 @@ nav ul li{
         margin-top: 50px;
     }
 
+    #top-books{
+        height: 200vh;
+    }
+    .books{
+        height: 350vh;
+    }
+
     /* .books .cards .card{
         height: 30vh;
     }
@@ -239,6 +280,13 @@ nav ul li{
         font-size: 1.5rem;
     }
 
+    #top-books{
+        height: 200vh;
+    }
+    .books{
+        height: 260vh;
+    }
+
     .books .cards{
         margin-top: 20px;
     }
@@ -250,4 +298,22 @@ nav ul li{
     .books .cards .card img{
         height: 20vh;
     } 
+}
+
+@media screen and (max-width: 470px){
+    #top-books{
+        height: 300vh;
+    }
+    .books{
+        height: 460vh;
+    }
+}
+
+@media screen and (max-width: 370px){
+    #top-books{
+        height: 300vh;
+    }
+    .books{
+        height: 460vh;
+    }
 }
