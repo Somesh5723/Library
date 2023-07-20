@@ -75,7 +75,7 @@ nav ul li a{
 }
 
 .books{
-    background:rgb(179, 190, 56);
+    background:rgb(159 163 108);
     height: 200vh;
     display: flex;
     flex-wrap: wrap;
@@ -156,14 +156,26 @@ nav ul li a{
     flex-direction: row;
     width: 30%;
     margin: auto;
+    transition: transform 0.5s ease-in-out;
     /* font-size: 40px; */
 }
 
-.social .logo a{
+/* .social .logo a{
     font-size: 20px;
     color: rgb(227, 231, 239);
 
+} */
+
+.social .logo a img{
+    width: 22px;
+    
 }
+
+
+.social .logo :hover{ 
+    transform: scale(1.1);
+}
+
 .social p{
     margin-bottom: 10px;
     font-size: 15px;
